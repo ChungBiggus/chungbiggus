@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <audio id="myAudio" preload="auto">
+      <source src="./wagey95song.mp3" />
+    </audio>
+
+    <div id="container" style="padding:10%">
+      <button id="button" style="height:500px; width: 700px; padding: 10%">
+        <h1>Wagey Wagey Don't You Clicky</h1>
+      </button>
+    </div>
+    <script type="text/javascript">
+      document.getElementById("button").onclick = function() {
+        document.getElementById("myAudio").play();
+        console.log("donezo");
+      };
+    </script>
+  </body>
+</html>
